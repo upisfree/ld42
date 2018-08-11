@@ -34,3 +34,12 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Assets
+Assets/Unity Recorder
+Assets/Standard Assets
+Assets/SampleScenes
+Assets/PostProcessing
+Assets/Plugins
+Assets/EffectExamples
+Assets/Cinemachine
