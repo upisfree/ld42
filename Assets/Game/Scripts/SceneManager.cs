@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour {
     public static string[] Scenes = {
-        "FirstScene",
-        "SecondScene",
-        "ThirdScene",
+        "GramophoneScene",
+        "DoorScene",
+        "WallScene",
         "ShootingScene",
         "EndScene"
     };

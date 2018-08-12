@@ -30,8 +30,8 @@ public class SceneTrigger : MonoBehaviour {
 
         SceneManager.Enable(SceneToEnableName);
 
-        if (SceneToEnableName == "ThirdScene") {
-            AudioSource[] fpsAudios = GameObject.Find("FPSController").GetComponentsInChildren<AudioSource>();
+        if (SceneToEnableName == "WallScene") {
+            AudioSource[] fpsAudios = GameObject.Find("Player").GetComponentsInChildren<AudioSource>();
 
             foreach (AudioSource a in fpsAudios) {
                 a.enabled = true;
