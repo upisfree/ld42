@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneToEnableName: DoorScene
-  Delay: 10
+  Delay: 2
   DisableAllScenesOnTrigger: 1
 --- !u!65 &34022657
 BoxCollider:
@@ -311,7 +311,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 75
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
@@ -1575,7 +1575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneToEnableName: WallScene
-  Delay: 5
+  Delay: 2
   DisableAllScenesOnTrigger: 1
 --- !u!65 &1159266754
 BoxCollider:
@@ -2005,6 +2005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf67b4b5435334cc6b412999d7ca5041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameStarted: 0
 --- !u!4 &1497782806
 Transform:
   m_ObjectHideFlags: 0

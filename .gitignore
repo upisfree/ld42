@@ -45,3 +45,6 @@ Assets/EffectExamples
 Assets/Cinemachine
 
 .DS_Store
+
+windows/
+macos.app
