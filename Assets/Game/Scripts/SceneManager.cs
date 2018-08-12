@@ -34,6 +34,8 @@ public class SceneManager : MonoBehaviour {
     private static void ChangeStatus(string name, bool isEnabled) {
         if (name == null || name == "") {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+
+            return;
         }
 
         Light[] lights = GameObject.Find(name).GetComponentsInChildren<Light>();

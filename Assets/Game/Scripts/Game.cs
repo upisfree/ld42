@@ -10,6 +10,8 @@ public class Game : MonoBehaviour {
 	}
 	
 	void Update () {
-		
+        if (Input.GetKeyDown(KeyCode.R)) {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        }
 	}
 }
