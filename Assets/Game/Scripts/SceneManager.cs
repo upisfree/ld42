@@ -5,7 +5,8 @@ using UnityEngine;
 public class SceneManager : MonoBehaviour {
     public static string[] Scenes = {
         "FirstScene",
-        "SecondScene"
+        "SecondScene",
+        "ThirdScene"
     };
 
     public static void Enable(string name) {
@@ -32,8 +33,6 @@ public class SceneManager : MonoBehaviour {
         Light[] lights = GameObject.Find(name).GetComponentsInChildren<Light>();
         Animator[] animators = GameObject.Find(name).GetComponentsInChildren<Animator>();
         AudioSource[] audios = GameObject.Find(name).GetComponentsInChildren<AudioSource>();
-
-        //Debug.Log(name + ", " + lights.Length);
 
         foreach (Light a in lights) {
             a.enabled = isEnabled;
