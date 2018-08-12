@@ -29,6 +29,14 @@ public class SceneTrigger : MonoBehaviour {
         }
 
         SceneManager.Enable(SceneToEnableName);
+
+        if (SceneToEnableName == "ThirdScene") {
+            AudioSource[] fpsAudios = GameObject.Find("FPSController").GetComponentsInChildren<AudioSource>();
+
+            foreach (AudioSource a in fpsAudios) {
+                a.enabled = true;
+            }
+        }
     }
 
     IEnumerator ManageScenesWithDelay() {

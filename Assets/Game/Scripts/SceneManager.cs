@@ -6,7 +6,9 @@ public class SceneManager : MonoBehaviour {
     public static string[] Scenes = {
         "FirstScene",
         "SecondScene",
-        "ThirdScene"
+        "ThirdScene",
+        "ShootingScene",
+        "EndScene"
     };
 
     public static void Enable(string name) {
@@ -30,6 +32,10 @@ public class SceneManager : MonoBehaviour {
     }
 
     private static void ChangeStatus(string name, bool isEnabled) {
+        if (name == null || name == "") {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        }
+
         Light[] lights = GameObject.Find(name).GetComponentsInChildren<Light>();
         Animator[] animators = GameObject.Find(name).GetComponentsInChildren<Animator>();
         AudioSource[] audios = GameObject.Find(name).GetComponentsInChildren<AudioSource>();
