@@ -93,9 +93,9 @@ MonoBehaviour:
       dynamicKeyValue: 1
       adaptationType: 0
       speedUp: 2
-      speedDown: 1
+      speedDown: 2
       logMin: -8
-      logMax: 4
+      logMax: 2
   bloom:
     m_Enabled: 1
     m_Settings:
@@ -103,8 +103,8 @@ MonoBehaviour:
         intensity: 1
         threshold: 1.1
         softKnee: 0.5
-        radius: 4
-        antiFlicker: 0
+        radius: 7
+        antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 3

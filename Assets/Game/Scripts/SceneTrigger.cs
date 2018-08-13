@@ -1,8 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using LD42;
 using UnityEngine;
-using UnityStandardAssets.Characters.FirstPerson;
 
 public class SceneTrigger : MonoBehaviour {
     public string SceneToEnableName;
