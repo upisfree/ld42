@@ -32,6 +32,6 @@ public class Game : MonoBehaviour {
         isGameStarted = true;
 
         //GameObject.Find("UI").SetActive(false);
-        //GameObject.Find("Player").GetComponent<FirstPersonController>().enabled = true;
+        //GameObject.Find("Player").GetComponent<FPS>().enabled = true;
     }
 }

@@ -8,7 +8,7 @@ public class SceneTrigger : MonoBehaviour {
     public string SceneToEnableName;
     public GameObject PlayerSpawnPoint;
     public GameObject PlayerSpawnPointLookAt;
-    public int Delay = 10;
+    public float Delay = 10;
     public bool DisableAllScenesOnTrigger = true;
 
     private void OnTriggerEnter(Collider other) {

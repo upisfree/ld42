@@ -157,8 +157,8 @@ MonoBehaviour:
   SceneToEnableName: DoorScene
   PlayerSpawnPoint: {fileID: 1057262287}
   PlayerSpawnPointLookAt: {fileID: 459522569}
-  Delay: 2
-  DisableAllScenesOnTrigger: 0
+  Delay: 4
+  DisableAllScenesOnTrigger: 1
 --- !u!65 &34022657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -221,7 +221,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 193800618}
   m_LocalRotation: {x: -0, y: 0.5962274, z: -0, w: 0.8028157}
-  m_LocalPosition: {x: 57.4, y: 5.2576075, z: 104.5}
+  m_LocalPosition: {x: 37.3, y: 5.2576075, z: 84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1158160054}
@@ -288,13 +288,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 285094985}
   m_LocalRotation: {x: -0, y: 0.5962274, z: -0, w: 0.8028157}
-  m_LocalPosition: {x: 61.07, y: 0.59, z: 130.84}
+  m_LocalPosition: {x: 37.3, y: 5.2576075, z: 84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 816085291}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 73.200005, z: 0}
 --- !u!82 &285094987
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1007,14 +1007,14 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 640292300}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccdbfe230a7bb40949621c847a57f923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_WalkSpeed: 3
+  m_RunSpeed: 3
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 0
   m_StickToGroundForce: 10
@@ -1106,7 +1106,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
-  NeedToRotateView: 1
 --- !u!1001 &762893898
 Prefab:
   m_ObjectHideFlags: 0
@@ -1224,9 +1223,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 816085290}
-  m_LocalRotation: {x: -0.000000062472694, y: -0.7317306, z: -0.00000007979176, w: -0.68159395}
-  m_LocalPosition: {x: -0.005100809, y: 2.0676076, z: -0.37267298}
-  m_LocalScale: {x: 0.63208234, y: 0.54449, z: 0.564852}
+  m_LocalRotation: {x: -0.0000000624727, y: -0.7317306, z: -0.00000007979177, w: -0.681594}
+  m_LocalPosition: {x: -7.39, y: -2.6, z: 2.29}
+  m_LocalScale: {x: 0.6320801, y: 0.54449, z: 0.56485}
   m_Children: []
   m_Father: {fileID: 285094986}
   m_RootOrder: 0
@@ -1245,7 +1244,7 @@ MonoBehaviour:
   SceneToEnableName: EndScene
   PlayerSpawnPoint: {fileID: 0}
   PlayerSpawnPointLookAt: {fileID: 0}
-  Delay: 15
+  Delay: 13.5
   DisableAllScenesOnTrigger: 1
 --- !u!65 &816085293
 BoxCollider:
@@ -1257,8 +1256,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60.058643, y: 10, z: 66.33404}
-  m_Center: {x: 25.029305, y: 0.00000043787486, z: 28.166988}
+  m_Size: {x: 68.40635, y: 10, z: 61.261402}
+  m_Center: {x: 9.237267, y: 0.0000004378748, z: 2.9273791}
 --- !u!1001 &865104695
 Prefab:
   m_ObjectHideFlags: 0
@@ -1749,7 +1748,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2a4e26835042945e2855d163a82f1ba9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1891,7 +1890,7 @@ MonoBehaviour:
   SceneToEnableName: WallScene
   PlayerSpawnPoint: {fileID: 1178784633}
   PlayerSpawnPointLookAt: {fileID: 1158160055}
-  Delay: 2
+  Delay: 4
   DisableAllScenesOnTrigger: 1
 --- !u!65 &1159266754
 BoxCollider:
@@ -2306,13 +2305,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1323056071}
   m_LocalRotation: {x: -0, y: 0.5962274, z: -0, w: 0.8028157}
-  m_LocalPosition: {x: 61.07, y: 0.59, z: 130.84}
+  m_LocalPosition: {x: 37.3, y: 5.2576075, z: 84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1558621343}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 73.200005, z: 0}
 --- !u!1 &1338360701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,9 +2583,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1558621342}
-  m_LocalRotation: {x: -0.000000062472694, y: -0.7317306, z: -0.00000007979176, w: -0.68159395}
-  m_LocalPosition: {x: -0.005100809, y: 2.0676076, z: -0.37267298}
-  m_LocalScale: {x: 0.63208234, y: 0.54449, z: 0.564852}
+  m_LocalRotation: {x: -0.0000000624727, y: -0.7317306, z: -0.00000007979177, w: -0.681594}
+  m_LocalPosition: {x: -7.39, y: -2.6, z: 2.29}
+  m_LocalScale: {x: 0.6320801, y: 0.54449, z: 0.56485}
   m_Children: []
   m_Father: {fileID: 1323056073}
   m_RootOrder: 0
@@ -2605,7 +2604,7 @@ MonoBehaviour:
   SceneToEnableName: 
   PlayerSpawnPoint: {fileID: 0}
   PlayerSpawnPointLookAt: {fileID: 0}
-  Delay: 32
+  Delay: 35
   DisableAllScenesOnTrigger: 1
 --- !u!65 &1558621345
 BoxCollider:
@@ -2617,8 +2616,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60.058643, y: 10, z: 66.33404}
-  m_Center: {x: 25.029305, y: 0.00000043787486, z: 28.166988}
+  m_Size: {x: 68.40635, y: 10, z: 61.261402}
+  m_Center: {x: 9.237267, y: 0.0000004378748, z: 2.9273791}
 --- !u!1 &1599273999
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,8 +2952,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60.058643, y: 10, z: 66.33404}
-  m_Center: {x: 25.029305, y: 0.00000043787486, z: 28.166988}
+  m_Size: {x: 68.40635, y: 10, z: 61.261402}
+  m_Center: {x: 9.237267, y: 0.0000004378748, z: 2.9273791}
 --- !u!1 &1945105511
 GameObject:
   m_ObjectHideFlags: 0
