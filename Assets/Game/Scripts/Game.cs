@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using LD42;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class Game : MonoBehaviour {
     public bool isGameStarted = false;
+
     void Start () {
         SceneManager.DisableAll();
 
@@ -18,9 +20,9 @@ public class Game : MonoBehaviour {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
         }
 
-        if (isGameStarted && Input.anyKeyDown) {
+        if (isGameStarted && Input.anyKeyDown && GameObject.Find("UI")) {
             GameObject.Find("UI").SetActive(false);
-            GameObject.Find("Player").GetComponent<FirstPersonController>().enabled = true;
+            GameObject.Find("Player").GetComponent<FPS>().enabled = true;
         }
 	}
 

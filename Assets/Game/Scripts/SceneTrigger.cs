@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using LD42;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class SceneTrigger : MonoBehaviour {
     public string SceneToEnableName;
+    public GameObject PlayerSpawnPoint;
+    public GameObject PlayerSpawnPointLookAt;
     public int Delay = 10;
     public bool DisableAllScenesOnTrigger = true;
 
@@ -24,14 +28,21 @@ public class SceneTrigger : MonoBehaviour {
     }
 
     private void ManageScenes() {
+        var player = GameObject.Find("Player");
+
         if (DisableAllScenesOnTrigger) {
             SceneManager.DisableAll();
         }
 
         SceneManager.Enable(SceneToEnableName);
 
+        if (PlayerSpawnPoint && PlayerSpawnPointLookAt) {
+            player.transform.position = PlayerSpawnPoint.transform.position;
+            player.transform.LookAt(PlayerSpawnPointLookAt.transform);
+        }
+
         if (SceneToEnableName == "WallScene") {
-            AudioSource[] fpsAudios = GameObject.Find("Player").GetComponentsInChildren<AudioSource>();
+            AudioSource[] fpsAudios = player.GetComponentsInChildren<AudioSource>();
 
             foreach (AudioSource a in fpsAudios) {
                 a.enabled = true;
