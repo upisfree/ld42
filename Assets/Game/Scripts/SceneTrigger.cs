@@ -16,14 +16,6 @@ public class SceneTrigger : MonoBehaviour {
         }
     }
 
-    private void OnTriggerStay(Collider other) {
-        
-    }
-
-    private void OnTriggerExit(Collider other) {
-        
-    }
-
     private void ManageScenes() {
         var player = GameObject.Find("Player");
 
@@ -44,6 +36,10 @@ public class SceneTrigger : MonoBehaviour {
             foreach (AudioSource a in fpsAudios) {
                 a.enabled = true;
             }
+        }
+
+        if (SceneToEnableName == "ShootingScene") {
+            GameObject.Find("Subtitle").GetComponent<Subtitles>().enabled = true;
         }
     }
 

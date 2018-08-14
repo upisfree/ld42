@@ -46,5 +46,4 @@ Assets/Cinemachine
 
 .DS_Store
 
-windows/
-macos.app
+out/
